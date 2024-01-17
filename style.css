@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --color-1: #ffffff;
+  --color-2: #f6f3e9;
+  --color-3: #407392;
+  --color-4: #315974;
+  --color-5: #ff0000;
+  --color-6: #244561;
+  --color-7: #116628;
+  --color-8: #161616;
+}
+
+body {
+  background-color: var(--color-1);
+  color: var(--color-8);
+}
+.container {
+  margin: 50px auto;
+  width: 70%;
+  height: auto;
+}
+
+header {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: var(--color-6);
+}
+
+.description {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.description span {
+  font-weight: bolder;
+}
+
+.inputs {
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.data-input p {
+  color: var(--color-6);
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.data-input input {
+  width: 100px;
+  padding: 5px;
+  border-radius: 2px;
+  border: 2px solid var(--color-6);
+  outline: none;
+  color: var(--color-8);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.button-div {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.button-style {
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 2px;
+  background-color: var(--color-7);
+  color: var(--color-1);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.imc {
+  width: 80%;
+  height: 50px;
+  padding: 10px;
+  margin: 40px auto;
+  border-radius: 2px;
+  border: 2px solid var(--color-6);
+  background-color: var(--color-3);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: none;
+}
+
+.imc p {
+  color: var(--color-1);
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.msg-erro {
+  width: 100%;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-5);
+  display: none;
+}
+
+.data-input input:focus {
+  border-color: var(--color-7);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.button-style:hover {
+  transform: scale(1.1);
+  transition: 1s ease-in-out;
+  cursor: pointer;
+}

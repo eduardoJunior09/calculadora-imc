@@ -9,11 +9,12 @@
   --color-1: #ffffff;
   --color-2: #f6f3e9;
   --color-3: #407392;
-  --color-4: #315974;
+  --color-4: #ddd;
   --color-5: #ff0000;
   --color-6: #244561;
   --color-7: #116628;
   --color-8: #161616;
+  --color-9: #f2f2f2;
 }
 
 body {
@@ -115,6 +116,47 @@ header {
   font-weight: 500;
   color: var(--color-5);
   display: none;
+}
+
+.table-info {
+  width: 100%;
+  height: auto;
+}
+
+.table-info h2 {
+  color: var(--color-6);
+  margin-bottom: 15px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table td,
+table th {
+  border: 1px solid var(--color-4);
+  padding: 8px;
+}
+
+table td{
+  font-size: 15px;
+}
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  font-weight: 500;
+  background-color: var(--color-6);
+  color: var(--color-1);
+}
+
+table tr:nth-child(even) {
+  background-color: var(--color-9);
+}
+
+table tr:hover {
+  background-color: var(--color-4);
 }
 
 .data-input input:focus {
